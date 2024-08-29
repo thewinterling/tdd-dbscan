@@ -71,9 +71,9 @@ def test_three_points_should_be_in_one_cluster(sample_points_to_cluster):
     noise_points = clustering.clustering_internals["noise_points"]
     core_points = clustering.clustering_internals["core_points"]
     number_of_found_clusters = clustering.clustering_internals["number_of_found_clusters"]
-    assert noise_points[0] == False
-    assert noise_points[1] == False
-    assert noise_points[5] == False
+    assert not noise_points[0]
+    assert not noise_points[1]
+    assert not noise_points[5]
 
     assert noise_points[2]
     assert noise_points[3]
