@@ -29,3 +29,13 @@ expect from the implementation, then _do_ the actual implementation work.
 The last test was to check the overall behaviour of the algorithm
 by checking the output of our implementation against the 
 `sklearn.cluster.DBSCAN` output.
+
+## Test
+
+Simply run
+
+```bash
+pytest tests/ -v
+```
+
+to run all unit-tests.
